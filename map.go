@@ -23,7 +23,7 @@ func (f *FixedMap) Delete(key interface{}) {
 	delete(f.m, key)
 }
 
-func (f *FixedMap) Range(fn func(key, value any) bool) {
+func (f *FixedMap) Range(fn func(key, value interface{}) bool) {
 	// todo: how to fix it if a FixedMap.Delete() called inside fn?
 	f.mu.Lock()
 	defer f.mu.Unlock()
