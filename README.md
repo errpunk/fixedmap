@@ -1,2 +1,2 @@
-# fixlenmap
-a simple go-routine-safe fix length map struct
+# fixedmap
+a simple go-routine-safe fixed length map struct
