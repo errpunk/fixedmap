@@ -13,6 +13,7 @@ type FixedMap struct {
 
 func NewFixLenMap(len int) *FixedMap {
 	return &FixedMap{
+		m: map[interface{}]interface{}{},
 		r: ring.New(len),
 	}
 }
